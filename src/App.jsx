@@ -1,7 +1,15 @@
+import Nav from "./components/Navbar"
+import ItemList from "./components/ItemListContainer"
+
 function App() {
 
   return (
-      <h1 className="text-9xl text-red-600">TEXT</h1>
+    <>
+      <Nav/>
+
+      <ItemList greeting="Bienvenido al ecommerce del anime"/>
+      
+    </>
   )
 }
 
