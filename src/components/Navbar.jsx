@@ -13,18 +13,17 @@ const Nav = () => {
       {/* Lista de elementos en el centro */}
       <div className="flex-grow flex justify-center">
         <ul className="flex justify-center space-x-16 bg-white/35 backdrop-blur-md p-3 rounded-md">
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Articulos</li>
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Figuras</li>
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Polerón</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Inicio</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Productos</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Sobre Mi</li>
           <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Contacto</li>
         </ul>
       </div>
       
       {/* Número en un cuadrado a la derecha */}
       <div className="flex items-center">
-        <div className="flex justify-center space-x-6 bg-white/35 backdrop-blur-md p-3 rounded-md">
+        <div className="flex justify-center space-x-6 bg-white/70 backdrop-blur-sm p-3 rounded-lg">
           {/* CARTWIDGET */}
-          <img src={logoNav} alt="Logo" className="h-8 w-7" />
           <Cart/>
         </div>
       </div>
