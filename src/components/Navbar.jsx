@@ -13,10 +13,10 @@ const Nav = () => {
       {/* Lista de elementos en el centro */}
       <div className="flex-grow flex justify-center">
         <ul className="flex justify-center space-x-16 bg-white/35 backdrop-blur-md p-3 rounded-md">
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Inicio</li>
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Productos</li>
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Sobre Mi</li>
-          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">Contacto</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md"><ion-icon name="home-outline"></ion-icon> Inicio</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md"><ion-icon name="file-tray-full-outline"></ion-icon> Productos</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md"><ion-icon name="person-outline"></ion-icon> Sobre Mi</li>
+          <li className="text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md"><ion-icon name="mail-outline"></ion-icon> Contacto</li>
         </ul>
       </div>
       
