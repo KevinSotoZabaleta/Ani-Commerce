@@ -1,21 +1,39 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from "./components/Navbar"
-// import AlertWithInput from "./components/Alert"
 import ItemListContainer from "./components/products/ItemListContainer"
-// import Test from "./components/products/Test"
+import ItemDetailContainer from './components/products/ItemDetailContainer'
+import ItemCount from './components/ItemCount/ItemCount'
+import Error from "./components/Error/Error"
 
 function App() {
 
   return (
-    
+
     <>
-      <Nav/>
-      <div className="flex justify-start items-start">
-        {/* <AlertWithInput/> {/*SE SOLICITA 2 VECES EL INPUT DEL PROMPT POR EL <React.StrictMode> DEL MAIN, BASTA CON COMENTARLO EN DESARROLLOasdasd */}
+      <BrowserRouter>
+        <Nav />
 
-        <ItemListContainer greeting="Bienvenido al eccomerce"/>
+        <Routes>
 
-        {/* <Test /> */}
-      </div>
+          <Route path="/" element={<ItemListContainer/>}/>
+
+          <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+
+          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+          
+          <Route path="*" element={<Error/>}/>
+
+        </Routes>
+
+      </BrowserRouter>
+
+      {/* <ItemListContainer greeting="Bienvenido" /> */}
+
+
+      {/* <ItemCount /> */}
+
+      {/* <ItemDetailContainer /> */}
+
     </>
   )
 }

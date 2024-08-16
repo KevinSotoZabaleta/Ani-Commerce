@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Camiseta",
-    "precio": 20,
+    "precio": 5,
     "stock": 150,
     "fecha_creacion": "2023-07-01",
     "tipo": "Ropa"
@@ -21,7 +21,7 @@
     "precio": 60,
     "stock": 200,
     "fecha_creacion": "2023-08-01",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "precio": 30,
     "stock": 300,
     "fecha_creacion": "2023-07-20",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 5,
@@ -61,7 +61,7 @@
     "precio": 260,
     "stock": 20,
     "fecha_creacion": "2023-08-01",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "precio": 310,
     "stock": 14,
     "fecha_creacion": "2023-07-20",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 10,
@@ -101,7 +101,7 @@
     "precio": 72,
     "stock": 9,
     "fecha_creacion": "2023-08-01",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "precio": 10,
     "stock": 3,
     "fecha_creacion": "2023-07-20",
-    "tipo": "Electrónica"
+    "tipo": "Electronica"
   },
   {
     "id": 15,
