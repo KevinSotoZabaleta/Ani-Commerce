@@ -21,11 +21,11 @@ const ItemCount = ({stock}) => {
   }
 
   return (
-    <div>
-      <button onClick={decrement} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Decremento</button>
-      <p>{count}</p>
-      <button onClick={increment} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Incremento</button>
-      <button onClick={addToCart} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar Carro</button>
+    <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-cyan-600 m-4">
+      <button onClick={decrement} className="bg-cyan-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">Decremento</button>
+      <p className="text-white">{count}</p>
+      <button onClick={increment} className="bg-cyan-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Incremento</button>
+      <button onClick={addToCart} className="bg-cyan-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar Carro</button>
     </div>
   )
 }

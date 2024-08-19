@@ -29,17 +29,12 @@ const ItemListContainer = ({ greeting }) => {
     fetchData()
 
   }, [categoryId])
-  // console.log(categoryId);
-
 
   return (
     <div>
-
       <h1>{greeting}</h1>
 
       {loading ? <Spinner /> : <ItemList products={products} />}
-
-
 
     </div>
   )
