@@ -26,7 +26,6 @@ const ItemDetailContainer = () => {
   return (
     <div>
       {product == undefined ? <Spinner /> : <ItemDetail product={product} />}
-      <ItemDetail product={product} />
     </div>
   )
 }

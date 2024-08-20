@@ -8,7 +8,7 @@ import img2 from "/one2.jpg";
 import img3 from "/one3.jpg";
 
 const Home = () => {
-  
+
   /**Propiedades para conf. carrusel */
   const settings = {
     dots: true,
@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-        <h1 className='text-4xl'>Bienvenido al Ani-Commerce...</h1>
+      <h1 className='text-4xl'>Bienvenido al Ani-Commerce...</h1>
 
 
       <div className="max-w-screen-lg mx-auto py-40">
