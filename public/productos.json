@@ -94,29 +94,5 @@
     "stock": 45,
     "fecha_creacion": "2023-06-15",
     "tipo": "Ropa"
-  },
-  {
-    "id": 13,
-    "nombre": "Auriculares XDF",
-    "precio": 72,
-    "stock": 9,
-    "fecha_creacion": "2023-08-01",
-    "tipo": "Electronica"
-  },
-  {
-    "id": 14,
-    "nombre": "Mouse Azul",
-    "precio": 10,
-    "stock": 3,
-    "fecha_creacion": "2023-07-20",
-    "tipo": "Electronica"
-  },
-  {
-    "id": 15,
-    "nombre": "Zapatos Doble",
-    "precio": 20,
-    "stock": 7,
-    "fecha_creacion": "2023-05-30",
-    "tipo": "Calzado"
   }
 ]
