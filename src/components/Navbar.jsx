@@ -1,10 +1,19 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Cart from "./CartWidget";
 import logoNav from "/LogoOrigin.png";
+import Search from "./products/Search";
 
 const Nav = () => {
+
+  const [searchTerm, setSearchTerm] = useState("")
+
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value)
+  }
+
   return (
-    <nav className="px-4 py-3 flex justify-between items-center bg-gradient-to-r from-blue-800 via-purple-500 to-teal-700">
+    <nav className="fixed top-0 left-0 w-full px-4 py-3 flex justify-between items-center bg-gradient-to-r from-blue-800 via-purple-500 to-teal-700 z-50">
       {/* Logo a la izquierda */}
       <div className="flex items-center">
         <Link to="/"><img src={logoNav} alt="Logo" className="h-12 mr-2" /></Link>
@@ -18,6 +27,7 @@ const Nav = () => {
             <ion-icon name="home-outline"></ion-icon>
             <Link to="/"> Inicio</Link>
           </li>
+
 
           {/* Menú desplegable */}
           <li className="relative group text-white cursor-pointer transition delay-10 hover:-translate-y-1 duration-300 shadow-md">
@@ -40,23 +50,17 @@ const Nav = () => {
               </li>
             </ul>
           </li>
-          {/**Futuro Buscador */}
-          <input
-            type="text"
-            placeholder="Buscar..."
-            className="w-32 px-2 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
-          />
         </ul>
       </div>
+      {/* <Search searchTerm={searchTerm}/> */}
 
-
-      {/* Nmero en un cuadrado a la derecha */}
+      {/* Seccion Carrito */}
       <div className="flex items-center">
         <div className="flex justify-center space-x-6 bg-white/70 backdrop-blur-sm p-3 rounded-lg">
-          {/* CARTWIDGET */}
-          <Cart />
+          <Cart /> {/** Componente donde encontramos todos los productos seleccionados */}
         </div>
       </div>
+      {/* Fin Seccion Carrito */}
     </nav>
   );
 }

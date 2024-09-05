@@ -9,9 +9,7 @@ const Cart = () => {
   return (
 
     <Link to="/cart">
-      {/* <p><ion-icon name="cart-outline"></ion-icon> 5</p> */}
       <p><ion-icon name="cart-outline"></ion-icon> {getTotalProducts() === 0 ? null : getTotalProducts()}</p>
-      {/* {getTotalProducts() === 0 ? null : getTotalProducts()} */}
     </Link >
   )
 }

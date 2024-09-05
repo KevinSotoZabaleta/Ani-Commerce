@@ -48,12 +48,13 @@ const CartProvider = ({ children }) => {
   }
 
   //Buy
-  const buy = () => {
-    console.log("Compra realizada")
-  }
+  // const buy = () => {
+  //   console.log("Compra realizada")
+  //   clearCart()
+  // }
 
   return (
-    <CartContext.Provider value={{ cart, addItems, isinCart, clearCart, getTotal, getTotalProducts, removeItems, buy}}>
+    <CartContext.Provider value={{ cart, addItems, isinCart, clearCart, getTotal, getTotalProducts, removeItems}}>
       {children}
     </CartContext.Provider>
 
