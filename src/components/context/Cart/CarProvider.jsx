@@ -47,17 +47,10 @@ const CartProvider = ({ children }) => {
     setCart(cart.filter((item) => item.product.id !== id))
   }
 
-  //Buy
-  // const buy = () => {
-  //   console.log("Compra realizada")
-  //   clearCart()
-  // }
-
   return (
     <CartContext.Provider value={{ cart, addItems, isinCart, clearCart, getTotal, getTotalProducts, removeItems}}>
       {children}
     </CartContext.Provider>
-
   )
 }
 

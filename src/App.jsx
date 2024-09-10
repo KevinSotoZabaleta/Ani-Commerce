@@ -12,7 +12,6 @@ import Checkout from './components/Checkout/Checkout'
 function App() {
 
   return (
-
     <>
       <CartProvider>
         <BrowserRouter>
@@ -21,7 +20,6 @@ function App() {
           <Routes>
 
             <Route path="/" element={<Home />} />
-            {/* <Route path="/" element={<ItemListContainer />} /> */}
 
             <Route path="/category/:categoryId" element={<ItemListContainer />} />
 

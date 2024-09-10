@@ -1,16 +1,8 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import Cart from "./CartWidget";
-import logoNav from "/LogoOrigin.png";
-import Search from "./products/Search";
+import { Link, NavLink } from "react-router-dom"
+import Cart from "./CartWidget"
+import logoNav from "/LogoOrigin.png"
 
 const Nav = () => {
-
-  const [searchTerm, setSearchTerm] = useState("")
-
-  const handleInputChange = (e) => {
-    setSearchTerm(e.target.value)
-  }
 
   return (
     <nav className="fixed top-0 left-0 w-full px-4 py-3 flex justify-between items-center bg-gradient-to-r from-blue-800 via-purple-500 to-teal-700 z-50">
@@ -40,19 +32,18 @@ const Nav = () => {
                 <ion-icon name="home-outline"></ion-icon><NavLink to="/todos"> Todos</NavLink>
               </li>
               <li className="px-4 py-2 hover:bg-blue-500 hover:text-white">
-                <ion-icon name="shirt-outline"></ion-icon><NavLink to="/category/Ropa"> Ropa</NavLink>
+                <ion-icon name="caret-forward-outline"></ion-icon><NavLink to="/category/OnePiece"> One Piece</NavLink>
               </li>
               <li className="px-4 py-2 hover:bg-blue-500 hover:text-white">
-                <ion-icon name="game-controller-outline"></ion-icon><NavLink to="/category/Electronica"> Electrónica</NavLink>
+                <ion-icon name="caret-forward-outline"></ion-icon><NavLink to="/category/DragonBall"> Dragon Ball</NavLink>
               </li>
               <li className="px-4 py-2 hover:bg-blue-500 hover:text-white">
-                <ion-icon name="footsteps-outline"></ion-icon><NavLink to="/category/Calzado"> Calzado</NavLink>
+                <ion-icon name="caret-forward-outline"></ion-icon><NavLink to="/category/Kimetsu"> kimetsu no yaiba</NavLink>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-      {/* <Search searchTerm={searchTerm}/> */}
 
       {/* Seccion Carrito */}
       <div className="flex items-center">
@@ -60,9 +51,8 @@ const Nav = () => {
           <Cart /> {/** Componente donde encontramos todos los productos seleccionados */}
         </div>
       </div>
-      {/* Fin Seccion Carrito */}
     </nav>
-  );
+  )
 }
 
-export default Nav;
+export default Nav

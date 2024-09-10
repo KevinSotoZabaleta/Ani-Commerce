@@ -3,7 +3,7 @@ import { CartContext } from "../context/Cart/CarProvider";
 import { Link } from "react-router-dom";
 
 const CartDetail = ({ cart }) => {
-  const { getTotal, getTotalProducts, removeItems, clearCart, buy } = useContext(CartContext);
+  const { getTotal, getTotalProducts, removeItems, clearCart } = useContext(CartContext);
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-900">

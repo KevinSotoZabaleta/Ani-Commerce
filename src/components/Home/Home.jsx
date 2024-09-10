@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import foto1 from "/foto1.jpg";
-import foto2 from "/foto2.jpg";
-import foto3 from "/foto3.jpg";
-import foto4 from "/isoka.jpg";
-import foto5 from "/slam1.jpg";
-import foto6 from "/naru.jpg";
+import foto1 from "/foto1.jpg"
+import foto2 from "/foto2.jpg"
+import foto3 from "/foto3.jpg"
+import foto4 from "/isoka.jpg"
+import foto5 from "/slam1.jpg"
+import foto6 from "/naru.jpg"
 
 const Home = () => {
 
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

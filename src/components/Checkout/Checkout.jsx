@@ -62,7 +62,7 @@ const Checkout = () => {
           clearCart()
         })
         .catch((error) => {
-          console.log("Error adding document", error)
+          console.log("Error agregando documento", error)
           setError("No se pudo generar la orden, inténtalo nuevamente.")
         })
     }).catch((error) => {

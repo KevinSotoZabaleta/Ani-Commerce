@@ -1,29 +1,28 @@
-import { CartContext } from '../context/Cart/CarProvider';
-import ItemCount from '../ItemCount/ItemCount';
-import { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import foto1 from "/foto1.jpg";
+import { CartContext } from '../context/Cart/CarProvider'
+import ItemCount from '../ItemCount/ItemCount'
+import { useContext, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ItemDetail = ({ product }) => {
-  const { addItems } = useContext(CartContext);
-  const [showItemCount, setShowItemCount] = useState(true);
-  const navigate = useNavigate();
+  const { addItems } = useContext(CartContext)
+  const [showItemCount, setShowItemCount] = useState(true)
+  const navigate = useNavigate()
 
   const onAdd = (quantity) => {
-    addItems(product, quantity);
-    setShowItemCount(false);
-  };
+    addItems(product, quantity)
+    setShowItemCount(false)
+  }
 
   const backButton = () => {
-    navigate(-1);
-  };
+    navigate(-1)
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-black via-gray-800 to-black p-4 relative">
       <div className='bg-white rounded-xl shadow-md overflow-hidden m-4 relative z-10'>
         <div className="p-6">
           <h2 className="font-extrabold text-2xl text-blue-900">{product.nombre}</h2>
-          <img className="w-full h-60 object-cover rounded-md mb-4" src={foto1} alt="Producto" />
+          <img className="w-full h-60 object-cover rounded-md mb-4" src={product.image} alt="Producto" />
           <p className="text-xl text-gray-700 mb-2">Precio: <span className="font-bold text-blue-900">${product.precio}</span></p>
           <p className="text-lg text-gray-500 mb-2">Stock: {product.stock}</p>
           <p className="text-lg text-gray-500 mb-4">Tipo: {product.tipo}</p>
@@ -43,8 +42,6 @@ const ItemDetail = ({ product }) => {
           ) : (
             <p className="text-red-500 text-center">Producto sin stock disponible</p>
           )}
-          {/** Fin Sección agregar al carro */}
-
         </div>
       </div>
 
@@ -55,7 +52,7 @@ const ItemDetail = ({ product }) => {
         <ion-icon name="arrow-back-outline"></ion-icon>
       </button>
     </div>
-  );
+  )
 }
 
-export default ItemDetail;
+export default ItemDetail
