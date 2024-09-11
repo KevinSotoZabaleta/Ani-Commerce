@@ -1,8 +1,37 @@
-# React + Vite
+# Ani-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Autor
 
-Currently, two official plugins are available:
+**Kevin Soto Zabaleta**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
+
+Proyecto sobre ventas de tarjetas de anime
+
+- One Piece
+- Dragon Ball
+- Kimetsu no yaiba
+
+## Instalación
+
+Instalación para hacer uso de spa
+
+1.- **Clonar Repositorio**
+
+https://github.com/KevinSotoZabaleta/Ani-Commerce
+
+cd Ani-commerce
+
+2.- **Instalar Dependencias**
+
+- npm i
+
+3.- **Ejecutar Proyecto**
+
+- npm run dev 
+
+## Dependencias
+
+- React-router-dom
+- Firebase
+
